@@ -4,15 +4,15 @@ CFLAGS= -Lmlx -lmlx -framework OpenGL -framework AppKit
 
 CC= cc
 
-SRC= put_pixel.c create_trgb.c
+SRC= main.c put_pixel.c create_trgb.c
 
 OBJ= $(SRC:.c=.o)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) main.c $(OBJ) -o $(NAME) -fsanitize=address -g
+	$(CC) $(OBJ) -Lmlx -lmlx -framework OpenGL -framework AppKit -o $(NAME)
 
-%.o:%.c
-	$(CC) $(CFLAGS) -c $< -o $@
+%.o: %.c
+	$(CC) -Wall -Wextra -Werror -Imlx -c $< -o $@
 
 all: $(NAME)
 

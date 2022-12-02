@@ -24,6 +24,7 @@ int	fractal(int keycode, t_frame *frame)
     float xscale, yscale, zx, zy, cx, tempx, cy;
     int x, y;
     int count;
+	(void)keycode;
 
     // setting up the xscale and yscale
     xscale = frame->xside / WINDOW_WIDTH;
@@ -34,10 +35,10 @@ int	fractal(int keycode, t_frame *frame)
 	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, &img.line_length, &img.endian);
 	frame->img = &img;
 
-	frame->left = -0.5 * (WINDOW_WIDTH / frame->scale);
-	frame->top = -0.5 * (WINDOW_HEIGHT / frame->scale);
-	frame->xside = 1 * (WINDOW_WIDTH / frame->scale);
-	frame->yside = 1 * (WINDOW_HEIGHT / frame->scale);
+	frame->left = -0.5 * (WINDOW_WIDTH * 9);
+	frame->top = -0.5 * (WINDOW_HEIGHT * 16 );
+	frame->xside = 1 * (WINDOW_WIDTH * 9 );
+	frame->yside = 1 * (WINDOW_HEIGHT * 16);
 
     // scanning every point in that rectangular area.
     // Each point represents a Complex number (x + yi).
@@ -99,10 +100,12 @@ int update(t_frame *data)
 {
 	fractal(0, data);
 	mlx_put_image_to_window(data->mlx, data->mlx_win, data->img->img, 0, 0);
+	return (0);
 }
 
 int scale(int keycode, t_frame *frame)
 {
+	(void)keycode;
 	frame->scale+=10;
 	return (0);
 }
