@@ -62,6 +62,7 @@ botton:  2.000000000000<br/>
 [Fabien fractol](https://git.42l.fr/Fabien/fractol/src/branch/master)<br/>
 [Fractals are typically not self-similar](https://www.youtube.com/watch?v=gB9n2gHsHN4)<br/>
 [p5.js julia set](https://editor.p5js.org/codingtrain/sketches/G6qbMmaI)<br/>
+[Mandelbrot Locations](http://www.cuug.ab.ca/~dewara/mandelbrot/images.html)<br/>
 
 z<sup>2</sup> = (x + iy)(x + iy) = x<sup>2</sup> + xyi + xyi - y<sup>2</sup> = x<sup>2</sup> - y<sup>2</sup> + 2xyi
 
