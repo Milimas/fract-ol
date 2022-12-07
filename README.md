@@ -50,6 +50,7 @@ botton:  2.000000000000<br/>
 [The mandelbrot Fractal Explained](https://www.youtube.com/watch?v=6IWXkV82oyY)<br/>
 [mandelbrot online viewer](https://mandel.gart.nz/)<br/>
 [optimize mandelbrot set](https://stackoverflow.com/questions/44354589/optimizing-mandelbrot-fractal)<br/>
+[Plotting algorithms for the Mandelbrot set](https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set)<br/>
 
 z<sup>2</sup> = (x + iy)(x + iy) = x<sup>2</sup> + xyi + xyi - y<sup>2</sup> = x<sup>2</sup> - y<sup>2</sup> + 2xyi
 
