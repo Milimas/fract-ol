@@ -60,6 +60,7 @@ botton:  2.000000000000<br/>
 [optimising rendering the mandelbrot set](https://blog.kazitor.com/2018/07/optimising-rendering-the-mandelbrot-set/)<br/>
 [Fract-ol](https://github.com/VBrazhnik/Fract-ol)<br/>
 [Fabien fractol](https://git.42l.fr/Fabien/fractol/src/branch/master)<br/>
+[Fractals are typically not self-similar](https://www.youtube.com/watch?v=gB9n2gHsHN4)<br/>
 
 z<sup>2</sup> = (x + iy)(x + iy) = x<sup>2</sup> + xyi + xyi - y<sup>2</sup> = x<sup>2</sup> - y<sup>2</sup> + 2xyi
 
