@@ -61,6 +61,7 @@ botton:  2.000000000000<br/>
 [Fract-ol](https://github.com/VBrazhnik/Fract-ol)<br/>
 [Fabien fractol](https://git.42l.fr/Fabien/fractol/src/branch/master)<br/>
 [Fractals are typically not self-similar](https://www.youtube.com/watch?v=gB9n2gHsHN4)<br/>
+[p5.js julia set](https://editor.p5js.org/codingtrain/sketches/G6qbMmaI)<br/>
 
 z<sup>2</sup> = (x + iy)(x + iy) = x<sup>2</sup> + xyi + xyi - y<sup>2</sup> = x<sup>2</sup> - y<sup>2</sup> + 2xyi
 
@@ -72,7 +73,9 @@ while iter < max_iter
     break
 color = iter/max_iter
 ```
-JavaScript implementation with p5.js:
+
+Mandelbrot JavaScript implementation with p5.js:
+
 ```javascript
 var minval = -0.5;
 var maxval = 0.5;
@@ -133,4 +136,18 @@ function draw()
   }
   updatePixels();
 }
+```
+for the julia set just modify the lines from
+```javascript
+...
+        a = aa + ca;
+        b = bb + cb;
+...
+```
+to
+```javascript
+...
+        a = aa -0.70176;
+        b = bb -0.3842;
+...
 ```
